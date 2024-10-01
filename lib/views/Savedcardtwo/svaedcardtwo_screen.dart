@@ -33,6 +33,11 @@ class _SvaedcardtwoScreenState extends State<SvaedcardtwoScreen> {
             color: Colors.black,
           ),
         ),
+        actions: [
+          IconButton(onPressed: () {
+            Navigator.pushNamed(context, '/mainlayout');
+          }, icon: const Icon(Icons.arrow_forward))
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
