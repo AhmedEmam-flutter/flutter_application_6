@@ -24,12 +24,12 @@ class _DeatilsScreenState extends State<DeatilsScreen> {
         backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: Colors.white,
-          title: Text('Details'),
+          title: const Text('Details'),
           leading: InkWell(
             onTap: () {
               Navigator.pop(context);
             },
-            child: Icon(Icons.arrow_back_ios_new_outlined)),
+            child: const Icon(Icons.arrow_back_ios_new_outlined)),
           actions: [
             Icon(
               Icons.bookmark,
@@ -45,7 +45,7 @@ class _DeatilsScreenState extends State<DeatilsScreen> {
                 child: SizedBox(
                     width: MediaQuery.of(context).size.width,
                     height: MediaQuery.of(context).size.height * 0.05,
-                    child: Text(
+                    child: const Text(
                       'Property Details',
                       style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     )),
@@ -67,7 +67,7 @@ class _DeatilsScreenState extends State<DeatilsScreen> {
               ),
               Container(
                 width: MediaQuery.of(context).size.width * 0.90,
-                height: MediaQuery.of(context).size.height * 0.3,
+                height: MediaQuery.of(context).size.height * 0.33,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(20),
@@ -76,7 +76,7 @@ class _DeatilsScreenState extends State<DeatilsScreen> {
                       color: Colors.grey.withOpacity(0.2),
                       spreadRadius: 5,
                       blurRadius: 7,
-                      offset: Offset(0, 3),
+                      offset: const Offset(0, 3),
                     ),
                   ],
                 ),
@@ -88,23 +88,23 @@ class _DeatilsScreenState extends State<DeatilsScreen> {
                           height: 50,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: NetworkImage(
                                   'https://img.freepik.com/free-photo/indoor-picture-cheerful-handsome-young-man-having-folded-hands-looking-directly-smiling-sincerely-wearing-casual-white-t-shirt_176532-10257.jpg',
                                 ),
                                 fit: BoxFit.fill,
                               ))),
-                      title: Text(
+                      title: const Text(
                         'Mohmaed Ali',
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
-                      subtitle: Text(
+                      subtitle: const Text(
                         'Homeowner',
                         style: TextStyle(color: Colors.black54),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -115,8 +115,8 @@ class _DeatilsScreenState extends State<DeatilsScreen> {
                         ],
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -127,8 +127,8 @@ class _DeatilsScreenState extends State<DeatilsScreen> {
                         ],
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -139,8 +139,8 @@ class _DeatilsScreenState extends State<DeatilsScreen> {
                         ],
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 9.0),
+                    const Padding(
+                      padding: EdgeInsets.only(left: 9.0),
                       child: Row(
                         children: [
                           Icon(
@@ -160,8 +160,8 @@ class _DeatilsScreenState extends State<DeatilsScreen> {
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.03,
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
+              const Padding(
+                padding: EdgeInsets.all(8.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -173,8 +173,8 @@ class _DeatilsScreenState extends State<DeatilsScreen> {
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
+              const Padding(
+                padding: EdgeInsets.all(8.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -186,8 +186,8 @@ class _DeatilsScreenState extends State<DeatilsScreen> {
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
+              const Padding(
+                padding: EdgeInsets.all(8.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -204,7 +204,7 @@ class _DeatilsScreenState extends State<DeatilsScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       'Location and Maps',
                       style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
@@ -232,14 +232,14 @@ class _DeatilsScreenState extends State<DeatilsScreen> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
-                            ElevatedButton(onPressed: (){}, child: Text('Location Map'),
+                            ElevatedButton(onPressed: (){},
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.red,
-                              ),
+                              ), child: Text('Location Map'),
                         
                             ),
-                            TextButton(onPressed: (){}, child: Text('Hospital'),),
-                            TextButton(onPressed: (){}, child: Text('School'),),
+                            TextButton(onPressed: (){}, child: const Text('Hospital'),),
+                            TextButton(onPressed: (){}, child: const Text('School'),),
                         
                           ]
                         ),
@@ -260,10 +260,10 @@ class _DeatilsScreenState extends State<DeatilsScreen> {
                                 color: Colors.grey.withOpacity(0.2),
                                 spreadRadius: 5,
                                 blurRadius: 7,
-                                offset: Offset(0, 3),
+                                offset: const Offset(0, 3),
                               ),
                             ],
-                            image: DecorationImage(
+                            image: const DecorationImage(
                               image: NetworkImage(
                                   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIx9SeDfR-iQVBq_dCL4zSEfxWGT-_P1l-A&s'),
                               fit: BoxFit.fill,
@@ -281,11 +281,11 @@ class _DeatilsScreenState extends State<DeatilsScreen> {
                       widget.onSave(widget.image);
                         Navigator.pop(context);
                      
-                    }, child: Text('Save',style: TextStyle(color: Colors.white),),style: ElevatedButton.styleFrom(
+                    },style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.purple,
                       
                       
-                    )),
+                    ), child: Text('Save',style: TextStyle(color: Colors.white),)),
                   ),
                 )
             ],
