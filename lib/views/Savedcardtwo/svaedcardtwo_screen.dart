@@ -35,7 +35,7 @@ class _SvaedcardtwoScreenState extends State<SvaedcardtwoScreen> {
         ),
         actions: [
           IconButton(onPressed: () {
-            Navigator.pushNamed(context, '/mainlayout');
+            Navigator.pushNamed(context, '/register');
           }, icon: const Icon(Icons.arrow_forward))
         ],
       ),
