@@ -89,8 +89,8 @@ class _DeatilsScreenState extends State<DeatilsScreen> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               image: const DecorationImage(
-                                image: NetworkImage(
-                                  'https://img.freepik.com/free-photo/indoor-picture-cheerful-handsome-young-man-having-folded-hands-looking-directly-smiling-sincerely-wearing-casual-white-t-shirt_176532-10257.jpg',
+                                image: AssetImage(
+                                  'assets/imagechat/360_F_302884605_actpipOdPOQHDTnFtp4zg4RtlWzhOASp.jpg',
                                 ),
                                 fit: BoxFit.fill,
                               ))),
@@ -264,8 +264,8 @@ class _DeatilsScreenState extends State<DeatilsScreen> {
                               ),
                             ],
                             image: const DecorationImage(
-                              image: NetworkImage(
-                                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIx9SeDfR-iQVBq_dCL4zSEfxWGT-_P1l-A&s'),
+                              image: AssetImage(
+                                  'assets/imagechat/360_F_302884605_actpipOdPOQHDTnFtp4zg4RtlWzhOASp.jpg'),
                               fit: BoxFit.fill,
                             )),
                       ),
