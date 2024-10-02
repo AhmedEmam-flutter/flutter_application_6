@@ -10,7 +10,7 @@ class LoginScreen extends StatelessWidget {
         children: [
           Container(
             width: MediaQuery.of(context).size.width,
-            color: Color.fromRGBO(74, 67, 236, 1),
+            color: const Color.fromRGBO(74, 67, 236, 1),
             height: MediaQuery.of(context).size.height,
           ),
           Positioned(
@@ -25,7 +25,7 @@ class LoginScreen extends StatelessWidget {
             child: Container(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height * 0.6,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   color: Color.fromRGBO(240, 240, 240, 1),
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(30),
@@ -33,24 +33,24 @@ class LoginScreen extends StatelessWidget {
                   )),
               child: Column(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  Text('login',
+                  const Text('login',
                       style:
                           TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Container(
                     height: 140,
                     width: MediaQuery.of(context).size.width * 0.8,
                     decoration: BoxDecoration(
-                      color: Color.fromRGBO(255, 255, 255, 1),
+                      color: const Color.fromRGBO(255, 255, 255, 1),
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(10.0),
+                    child: const Padding(
+                      padding: EdgeInsets.all(10.0),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -79,7 +79,7 @@ class LoginScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Padding(
@@ -88,46 +88,39 @@ class LoginScreen extends StatelessWidget {
                       children: [
                         TextButton(
                             onPressed: () {},
-                            child: Text(
+                            child: const Text(
                               'forgot password?',
                               style: TextStyle(color: Colors.black54),
                             )),
-                        Spacer(),
+                        const Spacer(),
                         SizedBox(
                           height: 50,
                           child: ElevatedButton(
                             onPressed: () {
                               Navigator.pushNamed(context, '/qustion');
                             },
-                            child: Text(
-                              'Login',
-                              style: TextStyle(color: Colors.white),
-                            ),
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: Color.fromRGBO(74, 67, 236, 1),
+                              backgroundColor: const Color.fromRGBO(74, 67, 236, 1),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20),
                               ),
+                            ),
+                            child: Text(
+                              'Login',
+                              style: TextStyle(color: Colors.white),
                             ),
                           ),
                         ),
                       ],
                     ),
                   ),
-                  TextButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/register');
-                      },
-                      child: Text(
-                        'dont have an account',
-                        style: TextStyle(color: Colors.black54),
-                      )),
+                  
                   Padding(
                     padding: const EdgeInsets.all(3.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        CircleAvatar(
+                        const CircleAvatar(
                             backgroundColor: Colors.white10,
                             radius: 20,
                             child: Icon(
@@ -135,10 +128,10 @@ class LoginScreen extends StatelessWidget {
                               color: Colors.blue,
                               size: 40,
                             )),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
-                        CircleAvatar(
+                        const CircleAvatar(
                             backgroundColor: Colors.white,
                             radius: 20,
                             child: Icon(
@@ -146,7 +139,7 @@ class LoginScreen extends StatelessWidget {
                               color: Colors.black,
                               size: 40,
                             )),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         CircleAvatar(
